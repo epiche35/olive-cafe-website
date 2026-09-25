@@ -1,0 +1,6 @@
+{
+  "name": "Olive Cafe, Dharan",
+  "description": "Olive Cafe in Putali Line, Dharan-10, Dharan, Nepal. Cafe and restaurant serving firewood pizza, burgers, momo, pasta, and beverages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Olive Cafe | Dharan, Nepal</title>
+  <meta name="description" content="Olive Cafe in Putali Line, Dharan-10, Dharan, Nepal. Cafe and restaurant serving firewood pizza, Italian dishes, momo, burgers, and beverages. Contact: 025-572996." />
+  <meta name="keywords" content="Olive Cafe, Olive Cafe Dharan, Putali Line Dharan, Dharan restaurant, firewood pizza Dharan, momo Dharan, Italian food Dharan, cafe in Dharan Nepal" />
+  <meta name="author" content="Olive Cafe" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://olivecafe.com.np/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:site_name" content="Olive Cafe, Dharan" />
+  <meta property="og:title" content="Olive Cafe | Dharan, Nepal" />
+  <meta property="og:description" content="Olive Cafe in Putali Line, Dharan-10, Dharan, Nepal. Renowned for firewood pizza, Italian dishes, momo, burgers, and specialty coffee. Contact: 025-572996." />
+  <meta property="og:image" content="/assets/images/hero-patio.jpg" />
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Olive Cafe | Dharan, Nepal" />
+  <meta name="twitter:description" content="Olive Cafe in Putali Line, Dharan-10, Dharan, Nepal. Renowned for firewood pizza, Italian dishes, momo, burgers, and specialty coffee. Contact: 025-572996." />
+  <meta name="twitter:image" content="/assets/images/hero-patio.jpg" />
+
+  <!-- Favicon (Official Olive Cafe Logo) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg" />
+  <link rel="apple-touch-icon" href="/assets/images/logo.svg" />
+
+  <!-- Google Fonts Preconnect & Fonts: Fraunces & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main Bespoke Stylesheet (No frameworks) -->
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Schema.org JSON-LD Structured Data for Local Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "@id": "https://olivecafe.com.np/#restaurant",
+    "name": "Olive Cafe",
+    "image": [
+      "/assets/images/logo.svg",
+      "/assets/images/hero-patio.jpg",
+      "/assets/images/firewood-pizza.jpg"
+    ],
+    "logo": "/assets/images/logo.svg",
+    "description": "Olive Cafe in Putali Line, Dharan-10, Dharan, Nepal. Cafe and restaurant serving firewood pizza, burgers, momo, pasta, and beverages.",
+    "telephone": "025-572996",
+    "email": "diwos.tuladhar@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Putali Line, Dharan-10",
+      "addressLocality": "Dharan",
+      "addressRegion": "Koshi Province",
+      "addressCountry": "NP"
+    },
+    "servesCuisine": [
+      "Firewood Pizza",
+      "Italian",
+      "Nepali",
+      "Cafe",
+      "Fast Food",
+      "Burgers"
+    ],
+    "priceRange": "$$",
+    "hasMenu": "https://olivecafe.com.np/#menu",
+    "sameAs": [
+      "https://www.instagram.com/olivecafe_dhrn/",
+      "https://www.facebook.com/OliveCafeDharan"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- 1. STICKY TOP NAVIGATION BAR -->
+  <header id="site-header" class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo / Wordmark -->
+      <a href="#home" class="brand-link" aria-label="Olive Cafe Dharan Home">
+        <img src="/assets/images/logo.svg" alt="Olive Cafe Official Logo" class="brand-logo-img" width="48" height="48" />
+        <div>
+          <span>Olive Cafe</span>
+          <span class="brand-sub">Putali Line, Dharan-10</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#why-visit" class="nav-link">Why Visit</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Location & Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Order Basket Drawer Toggle & Hamburger) -->
+      <div class="nav-actions">
+        <button id="cart-toggle-btn" class="cart-toggle-btn" type="button" aria-label="View Selected Order Items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span>Order Basket</span>
+          <span id="cart-badge" class="cart-badge tabular-nums" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button id="menu-toggle-btn" class="menu-toggle-btn" type="button" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Backdrop Overlay -->
+    <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true"></div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation">
+      <div class="mobile-nav-swipe-bar">
+        <span class="mobile-nav-swipe-hint">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span>Swipe left to close</span>
+        </span>
+        <button id="mobile-nav-close-btn" class="mobile-nav-close-btn" type="button" aria-label="Close navigation menu">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Brand Header -->
+      <div class="mobile-nav-logo-wrap">
+        <img src="/assets/images/logo.svg" alt="Olive Cafe Logo" class="mobile-logo-img" width="52" height="52" />
+        <div>
+          <strong style="display:block; font-size: 1.15rem; color: var(--color-olive-950);">Olive Cafe</strong>
+          <small style="color: var(--color-olive-600); font-weight: 600;">Putali Line, Dharan-10</small>
+        </div>
+      </div>
+
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#about" class="mobile-nav-link">About Olive Cafe</a>
+      <a href="#why-visit" class="mobile-nav-link">Why Visit</a>
+      <a href="#menu" class="mobile-nav-link">Menu & Order</a>
+      <a href="#gallery" class="mobile-nav-link">Photo Gallery</a>
+      <a href="#contact" class="mobile-nav-link">Location & Contact</a>
+
+      <div class="mobile-nav-contact-info">
+        <span>📍 Putali Line, Dharan-10, Dharan, Nepal</span>
+        <span>📞 <a href="tel:025572996" data-business-phone style="color: var(--color-olive-800); font-weight:700;">025-572996</a></span>
+        <span>💬 WhatsApp: <a href="https://wa.me/9779845748312" target="_blank" rel="noopener noreferrer" style="color: #25d366; font-weight:700;">+977 984-5748312</a></span>
+        <span>🕒 <span data-business-hours-notice>Opening hours — Please confirm with Olive Cafe</span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- 2. HERO SECTION -->
+    <section id="home" class="hero-section">
+      <img 
+        src="/assets/images/hero-patio.jpg" 
+        alt="Olive Cafe Dharan outdoor patio seating at night" 
+        class="hero-bg" 
+        fetchpriority="high"
+        referrerpolicy="no-referrer"
+        onerror="this.onerror=null; this.src='/assets/images/firewood-pizza.jpg';"
+      />
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content reveal-on-scroll is-visible">
+          
+          <!-- Official Logo Emblem -->
+          <div>
+            <img src="/assets/images/logo.svg" alt="Olive Cafe Official Emblem" class="hero-logo-emblem" width="96" height="96" />
+          </div>
+
+          <div class="hero-kicker-wrap">
+            <span class="hero-kicker-dot" aria-hidden="true"></span>
+            <span class="hero-kicker-text">Putali Line, Dharan-10 · Firewood Pizza & Italian Dishes</span>
+          </div>
+
+          <h1 class="hero-title">OLIVE CAFE</h1>
+          <p class="hero-tagline">“Firewood Pizza & Italian Dishes”</p>
+          <p class="hero-desc">
+            Authentic wood-fired oven pizza, Italian pasta, crispy momo, burgers, and barista brews in the heart of Dharan.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+              <span>Explore Menu</span>
+            </a>
+            
+            <a href="https://wa.me/9779845748312?text=Hello%20Olive%20Cafe%2C%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-whatsapp">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <span>Order via WhatsApp</span>
+            </a>
+
+            <a href="https://maps.google.com/?q=Olive+Cafe+Putali+Line+Dharan+Nepal" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" data-business-maps>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+              </svg>
+              <span>Get Directions</span>
+            </a>
+          </div>
+
+          <div class="hero-verified-bar">
+            <span>📍 Putali Line, Dharan-10, Dharan</span>
+            <span class="dot-sep">&bull;</span>
+            <span>📞 <a href="tel:025572996" data-business-phone style="text-decoration: underline; color: #ffffff;">025-572996</a></span>
+            <span class="dot-sep">&bull;</span>
+            <span>💬 <a href="https://wa.me/9779845748312" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #25d366;">+977 984-5748312</a></span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <div class="about-text-content reveal-on-scroll">
+            <span class="section-kicker">About Olive Cafe</span>
+            <h2 class="section-title">A Welcoming Dining Destination in Dharan</h2>
+            <p class="lead-text">
+              Olive Cafe is situated along Putali Line in Dharan-10, offering a friendly, relaxed gathering place for friends, families, and food enthusiasts across Dharan.
+            </p>
+            <p>
+              Specializing in authentic firewood pizza baked with a thin, blistered crust and fresh toppings, our kitchen pairs rustic Italian favorites with beloved local tastes. From sizzling chicken lollipops and chicken satay skewers to our signature crispy Nepali C-momo and whole grilled spiced fish platter, we take pride in quality ingredients and hearty flavors.
+            </p>
+            <p>
+              Whether you are catching up over handcrafted barista latte art coffee on our open-air evening patio or dropping by for delicious pasta and burgers, we look forward to making every visit special.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">🔥</span>
+                <div>
+                  <h4>Firewood Pizza</h4>
+                  <p>Baked in a traditional wood-fired brick oven for authentic smoky aroma and crisp crust.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">🍝</span>
+                <div>
+                  <h4>Italian & Local Dishes</h4>
+                  <p>Al dente pasta, gourmet burgers, crispy momo, and fresh fish prepared to order.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">🌿</span>
+                <div>
+                  <h4>Outdoor Patio</h4>
+                  <p>Comfortable low wooden bench seating with evening lights for casual catchups.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon" aria-hidden="true">☕</span>
+                <div>
+                  <h4>Barista Coffee & Coolers</h4>
+                  <p>Handcrafted espresso with latte art and refreshing chilled tropical coolers.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.75rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#menu" class="btn btn-primary">Browse Our Menu</a>
+              <a href="tel:025572996" class="btn btn-secondary">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>Call 025-572996</span>
+              </a>
+            </div>
+
+          </div>
+
+          <div class="about-image-wrapper reveal-on-scroll">
+            <div class="image-frame">
+              <img 
+                src="/assets/images/hero-patio.jpg" 
+                alt="Olive Cafe outdoor patio seating and ambience" 
+                class="about-img-main" 
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                onerror="this.onerror=null; this.src='/assets/images/firewood-pizza.jpg';"
+              />
+            </div>
+            <div class="about-card-badge">
+              <strong>Putali Line, Dharan-10</strong>
+              <span>Firewood Pizza & Italian Kitchen</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. WHY VISIT / CAFE STRENGTHS -->
+    <section id="why-visit" class="why-visit-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Why Choose Olive Cafe</span>
+          <h2 class="section-title">Good Food. Great Coffee. Better Moments.</h2>
+          <p class="section-desc">
+            A favorite spot in Putali Line for wholesome flavors, cozy patio conversations, and warm hospitality.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon" aria-hidden="true">🍕</div>
+            <h3>Authentic Firewood Pizza</h3>
+            <p>
+              Hand-stretched dough baked in our firewood oven creates that signature crispy blistered crust and melting cheese aroma.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon" aria-hidden="true">🥟</div>
+            <h3>Crispy Momo & Snacks</h3>
+            <p>
+              From crispy C-momo tossed in chili glaze to tandoori roasted momo and chicken lollipops, satisfying your cravings anytime.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon" aria-hidden="true">🐟</div>
+            <h3>Grilled Seafood & Italian</h3>
+            <p>
+              Chargrilled whole fish platters, rich creamy fettuccine Alfredo, and spicy arrabbiata pasta prepared fresh from our kitchen.
+            </p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon" aria-hidden="true">☕</div>
+            <h3>Specialty Barista Brews</h3>
+            <p>
+              Freshly ground high-altitude beans extracted with velvety microfoam latte art, alongside ice-chilled citrus fruit coolers.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. MENU SECTION -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Our Kitchen Offerings</span>
+          <h2 class="section-title">Olive Cafe Menu</h2>
+          <p class="section-desc">
+            Explore our real menu with prices in Nepali Rupees (NPR). Add items to your order basket and send your order via WhatsApp or phone.
+          </p>
+        </div>
+
+        <!-- Menu Filter & Search Toolbar -->
+        <div class="menu-toolbar reveal-on-scroll">
+          
+          <!-- Search Input -->
+          <div class="menu-search-wrap">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="search" 
+              id="menu-search-input" 
+              class="menu-search-input" 
+              placeholder="Search pizza, momo, pasta, burger, coffee..." 
+              aria-label="Search food and beverage items"
+            />
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="menu-categories-nav" role="tablist" aria-label="Menu Categories">
+            <button type="button" class="category-tab-btn is-active" data-category="all">All</button>
+            <button type="button" class="category-tab-btn" data-category="pizza">Pizza</button>
+            <button type="button" class="category-tab-btn" data-category="momo">Momo</button>
+            <button type="button" class="category-tab-btn" data-category="italian">Italian</button>
+            <button type="button" class="category-tab-btn" data-category="fast food">Fast Food</button>
+            <button type="button" class="category-tab-btn" data-category="burgers">Burgers</button>
+            <button type="button" class="category-tab-btn" data-category="beverages">Beverages</button>
+            <button type="button" class="category-tab-btn" data-category="desserts">Desserts</button>
+          </div>
+
+        </div>
+
+        <!-- Dynamic Menu Items Grid -->
+        <div id="menu-grid" class="menu-grid reveal-on-scroll" aria-live="polite">
+          <!-- Populated by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. PHOTO GALLERY WITH LIGHTBOX -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Photo Gallery</span>
+          <h2 class="section-title">Glimpses of Olive Cafe</h2>
+          <p class="section-desc">
+            Authentic photographs of our dishes, handcrafted brews, and relaxing patio atmosphere at Putali Line, Dharan.
+          </p>
+        </div>
+
+        <!-- Gallery Filter Tabs -->
+        <div class="gallery-filter-tabs reveal-on-scroll">
+          <button type="button" class="category-tab-btn gallery-tab-btn is-active" data-filter="all">All Photos</button>
+          <button type="button" class="category-tab-btn gallery-tab-btn" data-filter="food">Dishes & Pizza</button>
+          <button type="button" class="category-tab-btn gallery-tab-btn" data-filter="drinks">Coffee & Drinks</button>
+          <button type="button" class="category-tab-btn gallery-tab-btn" data-filter="interior">Atmosphere</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="gallery-grid" class="gallery-grid reveal-on-scroll">
+          <!-- Populated by script.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. COMMUNITY & SOCIAL SHOWCASE (Official Links) -->
+    <section id="community" class="community-banner">
+      <div class="container">
+        <div class="community-banner-grid reveal-on-scroll">
+          <div>
+            <span class="section-kicker" style="color: var(--color-olive-200);">Connect With Us</span>
+            <h2 class="section-title" style="color: #ffffff;">Stay Connected with Olive Cafe</h2>
+            <p style="color: rgba(255,255,255,0.8); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
+              Follow our daily specials, tag us in your patio photos, and order directly on WhatsApp. We are proud to serve the Dharan community!
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="https://wa.me/9779845748312" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-whatsapp">
+                <span>Chat on WhatsApp</span>
+              </a>
+              <a href="tel:025572996" class="btn btn-ghost" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">
+                <span>Call 025-572996</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="community-cards">
+            <a href="https://www.instagram.com/olivecafe_dhrn/" target="_blank" rel="noopener noreferrer" class="community-card" data-business-instagram>
+              <div class="community-card-icon instagram">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <div class="community-card-info">
+                <h4>Instagram: @olivecafe_dhrn</h4>
+                <p>Follow our photos, food stories and highlights</p>
+              </div>
+            </a>
+
+            <a href="https://www.facebook.com/OliveCafeDharan" target="_blank" rel="noopener noreferrer" class="community-card" data-business-facebook>
+              <div class="community-card-icon facebook">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </div>
+              <div class="community-card-info">
+                <h4>Facebook: Olive Cafe, Dharan</h4>
+                <p>Like our official page with 2.8K followers</p>
+              </div>
+            </a>
+
+            <a href="https://wa.me/9779845748312" target="_blank" rel="noopener noreferrer" class="community-card">
+              <div class="community-card-icon whatsapp">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </div>
+              <div class="community-card-info">
+                <h4>WhatsApp: +977 984-5748312</h4>
+                <p>Direct chat for fast order confirmations</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. LOCATION & CONTACT / RESERVATION SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-kicker">Find & Connect</span>
+          <h2 class="section-title">Location & Contact</h2>
+          <p class="section-desc">
+            Visit Olive Cafe in Putali Line, Dharan-10, or send an enquiry for table bookings and event visits.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left: Verified Location Details & Map -->
+          <div class="contact-info-card reveal-on-scroll">
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>Address</h4>
+                <p style="font-weight: 700; color: var(--color-olive-950);">Olive Cafe</p>
+                <p data-business-address>Putali Line, Dharan-10, Dharan, Nepal</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>Telephone & Mobile</h4>
+                <p><a href="tel:025572996" data-business-phone style="font-weight: 700; font-size: 1.1rem; color: var(--color-olive-900);">025-572996</a></p>
+                <small style="color: var(--color-text-light);">Direct telephone inquiry line</small>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>WhatsApp Number</h4>
+                <p><a href="https://wa.me/9779845748312" target="_blank" rel="noopener noreferrer" style="font-weight: 700; font-size: 1.1rem; color: #25d366;">+977 984-5748312</a></p>
+                <small style="color: var(--color-text-light);">Instant messaging & order enquiries</small>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>Email Address</h4>
+                <p><a href="mailto:diwos.tuladhar@gmail.com" data-business-email style="font-weight: 700; color: var(--color-olive-900);">diwos.tuladhar@gmail.com</a></p>
+                <small style="color: var(--color-text-light);">Direct business email</small>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>Opening Hours</h4>
+                <p style="color: var(--color-olive-800); font-weight: 600;" data-business-hours-notice>Opening hours — Please confirm with Olive Cafe</p>
+                <small style="color: var(--color-text-muted);">Please call 025-572996 or message on WhatsApp for daily schedule.</small>
+              </div>
+            </div>
+
+            <!-- Social Links Group -->
+            <div class="contact-socials-wrap">
+              <h4>Follow & Connect Online</h4>
+              <div class="social-buttons">
+                <a href="https://www.instagram.com/olivecafe_dhrn/" target="_blank" rel="noopener noreferrer" class="social-btn" data-business-instagram aria-label="Official Instagram">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg>
+                  <span>@olivecafe_dhrn</span>
+                </a>
+                <a href="https://www.facebook.com/OliveCafeDharan" target="_blank" rel="noopener noreferrer" class="social-btn" data-business-facebook aria-label="Official Facebook">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                  <span>Facebook</span>
+                </a>
+                <a href="https://wa.me/9779845748312" target="_blank" rel="noopener noreferrer" class="social-btn" style="color: #128c7e;" aria-label="WhatsApp Chat">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  <span>WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Map View Link -->
+            <div style="margin-top: 1.5rem;">
+              <a href="https://maps.google.com/?q=Olive+Cafe+Putali+Line+Dharan+Nepal" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%; justify-content: center;" data-business-maps>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                </svg>
+                <span>Open in Google Maps</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right: Table Booking & Visit Enquiry Form -->
+          <div class="reservation-form-card reveal-on-scroll">
+            <h3>Table Visit & Event Enquiry</h3>
+            <p>Planning a gathering, birthday celebration, or casual evening dinner with friends? Send your details below.</p>
+
+            <form id="reservation-form" novalidate>
+              
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="res-name" class="form-label">Full Name *</label>
+                  <input type="text" id="res-name" name="name" class="form-input" placeholder="Your name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="res-phone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="res-phone" name="phone" class="form-input" placeholder="e.g. 98XXXXXXXX" required />
+                </div>
+
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label for="res-date" class="form-label">Preferred Date *</label>
+                    <input type="date" id="res-date" name="date" class="form-input" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="res-time" class="form-label">Preferred Time *</label>
+                    <input type="time" id="res-time" name="time" class="form-input" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-guests" class="form-label">Estimated Number of Guests</label>
+                  <select id="res-guests" name="guests" class="form-select">
+                    <option value="1">1 Person</option>
+                    <option value="2" selected>2 People</option>
+                    <option value="3-4">3 – 4 People</option>
+                    <option value="5-8">5 – 8 People</option>
+                    <option value="9+">9+ (Group / Party)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-notes" class="form-label">Special Requests (Optional)</label>
+                  <textarea id="res-notes" name="notes" class="form-textarea" rows="3" placeholder="Patio seating preference, special occasion, food requests..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.95rem;">
+                  <span>Submit Table Enquiry</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 9. SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand & Contact -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="/assets/images/logo.svg" alt="Olive Cafe Official Logo" class="footer-logo-img" width="56" height="56" />
+            <span>Olive Cafe</span>
+          </div>
+          <p class="footer-brand-desc">
+            Cafe, restaurant and fast food in Putali Line, Dharan-10, Dharan, Nepal. Serving firewood pizza, Italian dishes, momo, burgers, and beverages.
+          </p>
+          <div class="social-buttons">
+            <a href="tel:025572996" class="social-btn" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);" aria-label="Call Olive Cafe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>025-572996</span>
+            </a>
+            <a href="https://wa.me/9779845748312" target="_blank" rel="noopener noreferrer" class="social-btn" style="background: #25d366; color: #fff; border-color: #25d366;" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+            <a href="https://www.instagram.com/olivecafe_dhrn/" target="_blank" rel="noopener noreferrer" class="social-btn" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);" data-business-instagram aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg>
+              <span>@olivecafe_dhrn</span>
+            </a>
+            <a href="https://www.facebook.com/OliveCafeDharan" target="_blank" rel="noopener noreferrer" class="social-btn" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);" data-business-facebook aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              <span>Facebook</span>
+            </a>
+            <a href="https://maps.google.com/?q=Olive+Cafe+Putali+Line+Dharan+Nepal" target="_blank" rel="noopener noreferrer" class="social-btn" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.2);" data-business-maps aria-label="Google Maps Location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon></svg>
+              <span>Directions</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Olive Cafe</a>
+            <a href="#why-visit">Why Visit</a>
+            <a href="#menu">Menu & Pricing</a>
+            <a href="#gallery">Photo Gallery</a>
+            <a href="#contact">Location & Hours</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Business Details -->
+        <div class="footer-col">
+          <h4>Business Details</h4>
+          <div class="footer-hours-list">
+            <p><strong>Address:</strong> <span data-business-address>Putali Line, Dharan-10, Dharan, Nepal</span></p>
+            <p><strong>Phone:</strong> <a href="tel:025572996" data-business-phone style="color: var(--color-olive-200); font-weight:700;">025-572996</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/9779845748312" target="_blank" rel="noopener noreferrer" style="color: #25d366; font-weight:700;">+977 984-5748312</a></p>
+            <p><strong>Email:</strong> <a href="mailto:diwos.tuladhar@gmail.com" data-business-email style="color: var(--color-olive-200);">diwos.tuladhar@gmail.com</a></p>
+            <div style="margin-top: 0.75rem; padding: 0.65rem; background: rgba(255,255,255,0.06); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1);">
+              <strong style="color: var(--color-olive-200); display:block; font-size: 0.8125rem; margin-bottom: 0.2rem;">Hours Notice:</strong>
+              <span data-business-hours-notice>Opening hours — Please confirm with Olive Cafe</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Olive Cafe. Putali Line, Dharan-10, Dharan, Nepal.
+        </div>
+        <div>
+          Olive Cafe &middot; Firewood Pizza & Italian Kitchen &middot; Dharan, Nepal
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART / ORDER BASKET SLIDE-OUT DRAWER -->
+  <div id="cart-drawer-overlay" class="cart-drawer-overlay" aria-hidden="true"></div>
+  <aside id="cart-drawer" class="cart-drawer" aria-label="Order Basket Drawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span>Order Basket</span>
+      </div>
+      <button id="cart-drawer-close" class="cart-drawer-close" type="button" aria-label="Close order basket drawer">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Items List Container -->
+    <div id="cart-items-list" class="cart-items-list">
+      <!-- Populated by script.js -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="cart-drawer-footer">
+      <div class="cart-order-type">
+        <label data-type="dine-in" class="active">
+          <input type="radio" name="cart-order-type" value="dine-in" checked />
+          <span>🍽️ Dine-In</span>
+        </label>
+        <label data-type="takeaway">
+          <input type="radio" name="cart-order-type" value="takeaway" />
+          <span>🥡 Takeaway</span>
+        </label>
+      </div>
+
+      <div class="cart-totals">
+        <div class="cart-totals-row">
+          <span>Items Selected:</span>
+          <span id="cart-subtotal">0 items</span>
+        </div>
+        <div class="cart-totals-row total">
+          <span>Estimated Total:</span>
+          <span id="cart-total-price" style="color: var(--color-olive-900);">NPR 0</span>
+        </div>
+      </div>
+
+      <div class="cart-checkout-actions">
+        <!-- Direct WhatsApp Order Button -->
+        <button id="cart-whatsapp-btn" class="btn btn-secondary btn-whatsapp" type="button" style="width: 100%; justify-content: center;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>Send Order via WhatsApp</span>
+        </button>
+
+        <!-- Direct Telephone Button -->
+        <a href="tel:025572996" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>Call 025-572996</span>
+        </a>
+
+        <!-- Order Summary & Details Button -->
+        <button id="cart-checkout-btn" class="btn btn-primary" type="button" style="width: 100%; justify-content: center;">
+          <span>Review Order Details</span>
+        </button>
+
+        <button id="cart-clear-btn" class="cart-clear-btn" type="button">Clear Basket</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ORDER SUMMARY MODAL -->
+  <div id="order-enquiry-modal" class="reservation-modal-backdrop" aria-hidden="true">
+    <div class="reservation-modal-box">
+      <div style="font-size: 2.75rem; line-height: 1; margin-bottom: 0.75rem;">📋</div>
+      <h3>Review Your Order</h3>
+      <p>
+        Olive Cafe directly prepares and confirms orders for customers. Please send your selected list via WhatsApp or give us a quick call at <strong>025-572996</strong> to confirm preparation time.
+      </p>
+
+      <div id="order-enquiry-summary" class="order-enquiry-summary-box">
+        <!-- Populated dynamically -->
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+        <button id="order-modal-whatsapp-btn" class="btn btn-secondary btn-whatsapp" style="width: 100%; justify-content: center;" type="button">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.05 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>Send via WhatsApp</span>
+        </button>
+        <a href="tel:025572996" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>Call 025-572996</span>
+        </a>
+        <button id="order-enquiry-modal-close" class="btn btn-ghost" style="width: 100%; justify-content: center;" type="button">
+          <span>Close Window</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <button id="lightbox-close" class="lightbox-btn lightbox-close" type="button" aria-label="Close Lightbox">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <button id="lightbox-prev" class="lightbox-btn lightbox-prev" type="button" aria-label="Previous Image">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button id="lightbox-next" class="lightbox-btn lightbox-next" type="button" aria-label="Next Image">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="" class="lightbox-image" />
+      <div class="lightbox-caption">
+        <h4 id="lightbox-title"></h4>
+        <p id="lightbox-category"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABLE RESERVATION CONFIRMATION MODAL -->
+  <div id="reservation-modal" class="reservation-modal-backdrop" aria-hidden="true">
+    <div class="reservation-modal-box">
+      <div style="font-size: 3rem; line-height: 1; margin-bottom: 0.75rem;">🥂</div>
+      <h3>Table Enquiry Received!</h3>
+      <p>
+        Thank you for your visit enquiry. Olive Cafe at Putali Line, Dharan-10 will confirm your table shortly. For urgent inquiries, please call us directly at <strong>025-572996</strong>.
+      </p>
+
+      <div id="reservation-summary-content" class="reservation-summary-list">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <button id="reservation-modal-close" class="btn btn-primary" style="width: 100%; justify-content: center;" type="button">
+        <span>Done</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top-btn" class="back-to-top-btn" type="button" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- App Logic (Vanilla JavaScript) -->
+  <script src="/js/script.js" defer></script>
+</body>
+</html>

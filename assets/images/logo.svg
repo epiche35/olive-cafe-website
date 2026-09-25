@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Background Circle -->
+  <defs>
+    <!-- Oven Fire Glow Gradient -->
+    <radialGradient id="fireGlow" cx="42%" cy="65%" r="45%">
+      <stop offset="0%" stop-color="#fff8db" />
+      <stop offset="25%" stop-color="#fdd835" />
+      <stop offset="60%" stop-color="#f57c00" />
+      <stop offset="100%" stop-color="#b71c1c" />
+    </radialGradient>
+    
+    <!-- Brick Pattern / Texture -->
+    <linearGradient id="brickWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3e1a14" />
+      <stop offset="50%" stop-color="#2a0808" />
+      <stop offset="100%" stop-color="#120404" />
+    </linearGradient>
+
+    <!-- Olive Green Shading -->
+    <linearGradient id="oliveLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8da53b" />
+      <stop offset="100%" stop-color="#556920" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Clean Circle Base -->
+  <circle cx="250" cy="250" r="244" fill="#ffffff" stroke="#e8ece0" stroke-width="2" />
+
+  <!-- 1. OLIVE BRANCH AT TOP -->
+  <g id="olive-branch" transform="translate(250, 68) scale(0.95)" text-anchor="middle">
+    <!-- Branch stems -->
+    <path d="M-85,15 Q-20,-10 0,-2 C20,6 75,0 95,-12" fill="none" stroke="#687e28" stroke-width="3" stroke-linecap="round" />
+    <path d="M-10,0 Q-15,-28 -2,-42 Q15,-20 8,-2" fill="url(#oliveLeaf)" />
+    <path d="M-40,8 Q-65,-12 -50,-26 Q-30,-15 -35,7" fill="url(#oliveLeaf)" />
+    <path d="M15,2 Q45,-18 55,-3 Q30,12 12,3" fill="url(#oliveLeaf)" />
+    <path d="M50,-4 Q78,-16 92,-6 Q70,12 46,-2" fill="url(#oliveLeaf)" />
+    <path d="M-75,14 Q-105,4 -95,-8 Q-75,2 -70,15" fill="url(#oliveLeaf)" />
+    
+    <!-- Central leaf accent -->
+    <path d="M-2,-2 Q-10,-32 0,-45 Q12,-30 2,-2" fill="#7d962d" />
+    <path d="M-1,-2 L0,-40" stroke="#52641c" stroke-width="1.5" />
+
+    <!-- Olives -->
+    <!-- Olive 1 -->
+    <ellipse cx="-28" cy="18" rx="8" ry="11" transform="rotate(-15 -28 18)" fill="#4e5f1b" />
+    <ellipse cx="-30" cy="16" rx="2.5" ry="4" fill="#8da53b" opacity="0.6" />
+    <!-- Olive 2 -->
+    <ellipse cx="-8" cy="22" rx="7.5" ry="10.5" transform="rotate(10 -8 22)" fill="#3f4f14" />
+    <ellipse cx="-10" cy="20" rx="2" ry="3.5" fill="#8da53b" opacity="0.6" />
+    <!-- Olive 3 -->
+    <ellipse cx="32" cy="16" rx="8" ry="11" transform="rotate(25 32 16)" fill="#54671e" />
+    <ellipse cx="30" cy="14" rx="2.5" ry="4" fill="#8da53b" opacity="0.6" />
+  </g>
+
+  <!-- 2. "Olive Cafe" TEXT -->
+  <g id="brand-name" transform="translate(250, 152)">
+    <text font-family="'Brush Script MT', 'Dancing Script', 'Caveat', 'Great Vibes', 'Palatino', serif" 
+          font-size="68" 
+          font-weight="bold" 
+          fill="#5f7324" 
+          text-anchor="middle"
+          letter-spacing="1">Olive Cafe</text>
+  </g>
+
+  <!-- 3. "firewood pizza" TEXT (RED) -->
+  <g id="firewood-text" transform="translate(250, 192)">
+    <text font-family="'Courier New', 'American Typewriter', 'Courier', 'Georgia', serif" 
+          font-size="24" 
+          font-weight="700" 
+          fill="#ad2424" 
+          text-anchor="middle"
+          letter-spacing="5.5">firewood pizza</text>
+  </g>
+
+  <!-- 4. "Dharan-10, Putali Line" TEXT (OLIVE GREEN) -->
+  <g id="address-text" transform="translate(250, 224)">
+    <text font-family="'Brush Script MT', 'Caveat', 'Segoe Script', 'Comic Sans MS', cursive" 
+          font-size="20" 
+          font-weight="600" 
+          fill="#637728" 
+          text-anchor="middle"
+          letter-spacing="0.5">Dharan~10, Putali Line</text>
+  </g>
+
+  <!-- 5. PHONE BADGE (RED TELEPHONE + 025-572996) -->
+  <g id="phone-badge" transform="translate(250, 252)">
+    <!-- Dividing subtle lines -->
+    <line x1="-95" y1="0" x2="-80" y2="0" stroke="#b0bba0" stroke-width="1.2" />
+    <line x1="80" y1="0" x2="95" y2="0" stroke="#b0bba0" stroke-width="1.2" />
+
+    <!-- Red vintage telephone icon -->
+    <g transform="translate(-70, -14) scale(0.85)">
+      <!-- Telephone body -->
+      <path d="M4,10 C4,6 7,4 12,4 C17,4 20,6 20,10 L22,22 C22,24 20,25 18,25 L6,25 C4,25 2,24 2,22 Z" fill="#b71c1c" />
+      <!-- Telephone handset top -->
+      <path d="M0,8 C0,5 5,2 12,2 C19,2 24,5 24,8 C23,10 20,9 18,7 C16,5 8,5 6,7 C4,9 1,10 0,8 Z" fill="#d32f2f" />
+      <!-- Dial grid -->
+      <rect x="7" y="11" width="10" height="9" rx="1.5" fill="#ffffff" />
+      <!-- Grid dots -->
+      <circle cx="9" cy="13" r="0.9" fill="#b71c1c" />
+      <circle cx="12" cy="13" r="0.9" fill="#b71c1c" />
+      <circle cx="15" cy="13" r="0.9" fill="#b71c1c" />
+      <circle cx="9" cy="15.5" r="0.9" fill="#b71c1c" />
+      <circle cx="12" cy="15.5" r="0.9" fill="#b71c1c" />
+      <circle cx="15" cy="15.5" r="0.9" fill="#b71c1c" />
+      <circle cx="9" cy="18" r="0.9" fill="#b71c1c" />
+      <circle cx="12" cy="18" r="0.9" fill="#b71c1c" />
+      <circle cx="15" cy="18" r="0.9" fill="#b71c1c" />
+    </g>
+
+    <!-- Phone Number in Italics / Bold Serif -->
+    <text x="-42" y="3" 
+          font-family="'Times New Roman', 'Georgia', serif" 
+          font-size="27" 
+          font-weight="bold" 
+          font-style="italic" 
+          fill="#111111" 
+          text-anchor="start"
+          letter-spacing="1">025-572996</text>
+  </g>
+
+  <!-- 6. OVAL PIZZA CHEF & FIREWOOD OVEN EMBLEM -->
+  <g id="chef-oven-emblem" transform="translate(250, 372)">
+    <!-- Outer oval black ring -->
+    <ellipse cx="0" cy="0" rx="136" ry="86" fill="#000000" />
+    <!-- Yellow border inset -->
+    <ellipse cx="0" cy="0" rx="132" ry="82" fill="none" stroke="#fbc02d" stroke-width="2.5" />
+
+    <!-- Clip path to keep artwork inside the oval -->
+    <g clip-path="url(#ovalClip)">
+      <clipPath id="ovalClip">
+        <ellipse cx="0" cy="0" rx="130" ry="80" />
+      </clipPath>
+
+      <!-- Inside Oval Background: Dark Brick Oven Room -->
+      <rect x="-140" y="-90" width="280" height="180" fill="url(#brickWall)" />
+
+      <!-- Horizontal Brick mortar lines -->
+      <line x1="-130" y1="-55" x2="130" y2="-55" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="-130" y1="-30" x2="130" y2="-30" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="-130" y1="-5" x2="130" y2="-5" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="-130" y1="20" x2="130" y2="20" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="-130" y1="45" x2="130" y2="45" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="-130" y1="70" x2="130" y2="70" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+
+      <!-- Vertical Brick hash marks -->
+      <line x1="-100" y1="-55" x2="-100" y2="-30" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="-60" y1="-55" x2="-60" y2="-30" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="40" y1="-55" x2="40" y2="-30" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="80" y1="-55" x2="80" y2="-30" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="-80" y1="-30" x2="-80" y2="-5" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+      <line x1="60" y1="-30" x2="60" y2="-5" stroke="#4a1810" stroke-width="1.2" opacity="0.6" />
+
+      <!-- Brick Oven Arch on the Left -->
+      <g id="oven-arch" transform="translate(-40, 10)">
+        <!-- Outer Brick Arch Curve -->
+        <path d="M-80,60 L-80,10 C-80,-45 -20,-68 25,-48 C60,-32 65,10 65,60 Z" fill="#991b1b" stroke="#3e0e0e" stroke-width="3" />
+        <!-- Radial Brick Blocks on the Arch -->
+        <path d="M-72,10 C-72,-40 -15,-60 22,-42 C54,-28 58,10 58,55" fill="none" stroke="#ff8a80" stroke-width="5" stroke-dasharray="8 4" opacity="0.6" />
+        
+        <!-- Glowing Oven Mouth Cavity -->
+        <path d="M-65,58 L-65,18 C-65,-28 -15,-48 20,-32 C48,-18 50,15 50,58 Z" fill="url(#fireGlow)" />
+
+        <!-- Radiant Flames Bursting Inside -->
+        <path d="M-45,28 L-42,10 L-32,24 L-22,6 L-15,26 L-2,10 L8,28 L-5,32 L-22,33 Z" fill="#ffe082" />
+        <path d="M-40,25 L-30,12 L-20,24 L-8,14 L0,25 Z" fill="#ffffff" opacity="0.9" />
+
+        <!-- Oven Floor / Firewood Log Base -->
+        <ellipse cx="-10" cy="52" rx="55" ry="12" fill="#3e1208" />
+        <path d="M-55,54 C-35,46 15,46 38,54 L28,62 L-48,62 Z" fill="#200603" />
+      </g>
+
+      <!-- The Peel (Pizza Paddle) extending from Chef into Oven -->
+      <g id="paddle-and-pizza">
+        <!-- Long Wooden Peel Handle -->
+        <line x1="55" y1="36" x2="-45" y2="22" stroke="#d7ccc8" stroke-width="3.5" stroke-linecap="round" />
+        <line x1="55" y1="36" x2="-45" y2="22" stroke="#5d4037" stroke-width="1.5" stroke-linecap="round" />
+
+        <!-- Round Peel Head with Fresh Pizza Inside Oven -->
+        <ellipse cx="-40" cy="22" rx="26" ry="13" fill="#8d6e63" stroke="#4e342e" stroke-width="1.5" />
+        <!-- Pizza Crust -->
+        <ellipse cx="-40" cy="21" rx="23" ry="11" fill="#e0a050" stroke="#a0522d" stroke-width="1.5" />
+        <!-- Pizza Sauce & Cheese -->
+        <ellipse cx="-40" cy="21" rx="19" ry="8.5" fill="#fbc02d" />
+        <!-- Pizza Toppings (Olives / Pepperoni / Herbs) -->
+        <circle cx="-48" cy="20" r="2.2" fill="#b71c1c" />
+        <circle cx="-42" cy="18" r="2.2" fill="#2e7d32" />
+        <circle cx="-35" cy="22" r="2.2" fill="#b71c1c" />
+        <circle cx="-44" cy="24" r="1.8" fill="#1b1b1b" />
+        <circle cx="-33" cy="17" r="1.8" fill="#1b1b1b" />
+      </g>
+
+      <!-- Italian Chef / Pizzaiolo (Red Outfit, White Hat & Neckerchief) -->
+      <g id="chef-figure" transform="translate(68, 12)">
+        <!-- Chef Torso / Red Jacket -->
+        <path d="M-10,25 Q-16,8 -5,-12 Q15,-15 28,-4 Q38,15 36,45 L10,65 L-12,50 Z" fill="#b71c1c" stroke="#4a0808" stroke-width="1.5" />
+        <!-- Red Jacket Collar & Details -->
+        <path d="M0,-8 L8,18 L18,-4" fill="none" stroke="#880e0e" stroke-width="2" />
+        
+        <!-- White Neckerchief / Scarf Tied Around Neck -->
+        <path d="M-4,-14 Q5,-10 12,-16 Q18,-12 16,-6 Q8,-2 -4,-14 Z" fill="#ffffff" stroke="#c0c0c0" stroke-width="1" />
+        <path d="M4,-8 L6,4 L12,-2 Z" fill="#ffffff" />
+
+        <!-- Chef Head / Face Profile Looking Left toward the Oven -->
+        <path d="M-12,-16 Q-18,-25 -14,-32 Q-6,-35 4,-30 Q12,-25 8,-16 Q0,-12 -12,-16 Z" fill="#f8bbd0" />
+        <!-- Chef Profile Nose, Chin, Mustache -->
+        <path d="M-14,-28 Q-21,-25 -18,-20 Q-15,-18 -12,-18" fill="none" stroke="#e91e63" stroke-width="1.5" stroke-linecap="round" />
+        <!-- Black Mustache -->
+        <path d="M-20,-20 Q-15,-23 -11,-21" fill="none" stroke="#212121" stroke-width="2.5" stroke-linecap="round" />
+
+        <!-- Chef White Toque (Hat) -->
+        <path d="M-14,-31 L7,-29 L8,-37 L-15,-39 Z" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" />
+        <path d="M-16,-38 C-22,-52 -5,-62 0,-50 C8,-65 24,-52 18,-40 C22,-34 16,-30 8,-36 L-16,-38 Z" fill="#ffffff" stroke="#bdbdbd" stroke-width="1.5" />
+        <!-- Puffs / pleats on hat -->
+        <path d="M-10,-42 Q-6,-52 -2,-45" fill="none" stroke="#e0e0e0" stroke-width="1.2" />
+        <path d="M2,-44 Q8,-54 11,-42" fill="none" stroke="#e0e0e0" stroke-width="1.2" />
+
+        <!-- Chef Arms Holding the Peel -->
+        <!-- Right Arm extending forward to Peel -->
+        <path d="M-5,0 Q-25,12 -38,20 Q-30,26 -20,20 Q-10,12 8,6 Z" fill="#c62828" stroke="#5d0d0d" stroke-width="1.2" />
+        <!-- Hand holding peel -->
+        <ellipse cx="-38" cy="22" rx="5" ry="4" fill="#f8bbd0" />
+
+        <!-- Left Arm Supporting the Peel -->
+        <path d="M12,8 Q-6,22 -2,32 Q6,28 16,18 Z" fill="#991b1b" stroke="#5d0d0d" stroke-width="1.2" />
+        <!-- Hand on peel -->
+        <ellipse cx="-2" cy="30" rx="4.5" ry="3.5" fill="#f8bbd0" />
+
+        <!-- White Apron Tie around Waist -->
+        <path d="M-8,36 Q8,42 22,34 L20,44 Q8,48 -8,44 Z" fill="#ffffff" stroke="#c0c0c0" stroke-width="1" />
+      </g>
+    </g>
+  </g>
+</svg>
