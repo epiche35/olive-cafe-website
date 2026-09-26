@@ -2550,12 +2550,15 @@ ul, ol {
 }
 
 /* --------------------------------------------------------------------------
-   17. Scroll Reveal Animations (Vanilla JS IntersectionObserver)
+   17. Scroll Reveal Animations (Safe Version)
    -------------------------------------------------------------------------- */
+
 .reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
@@ -2570,4 +2573,16 @@ ul, ol {
     transform: none;
     transition: none;
   }
+}
+
+/* Final visibility safety */
+section,
+header,
+footer {
+  visibility: visible;
+}
+
+.menu-grid,
+.gallery-grid {
+  min-height: 20px;
 }
